@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-deployment
+  name: hello-deploymentn
   labels:
-    role: app
+    role: appn
 spec:
   replicas: 2
   selector:
     matchLabels:
-      role: app
+      role: appn
   template:
     metadata:
       labels:
-        role: app
+        role: appn
     spec:
       containers:
-      - name: app
-        image: "{{ image_id }}"
+      - name: appn
+        image: vignesh203/deployment:latest
         resources:
           requests:
             cpu: 10m
