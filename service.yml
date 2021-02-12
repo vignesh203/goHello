@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-svc
+  name: hello-svcn
 spec:
   selector:
-    role: app
+    role: appn
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8080
-      nodePort: 32000
+      nodePort: 32009
   type: NodePort
